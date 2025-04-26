@@ -1,6 +1,6 @@
 # Système de Gestion de Bibliothèque Universitaire
 
-## Description du Projet
+## Description du Projet :
 
 Ce projet est un système simplifié de gestion pour la bibliothèque de l'Université de Bouira,
 L'objectif est de concevoir et d'implémenter un système permettant de gérer les livres, les utilisateurs (Administrateurs et Lecteurs) et les emprunts, en appliquant plusieurs design patterns.
