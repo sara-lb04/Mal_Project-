@@ -31,7 +31,7 @@ Ce projet met en œuvre les design patterns suivants :
 * **Singleton :** Assure une instance unique de la classe `Bibliotheque` (`Bibliotheque.getInstance()`).
 * **Factory Method :** Utilisé pour la création des différents types d'utilisateurs (`Admin`, `Lecteur`) via la hiérarchie `UtilisateurCreator`, `AdminCreator`, `LecteurCreator`.
 * **Proxy :** Contrôle l'accès aux opérations sensibles de la `Bibliotheque` (ajout et suppression de livres), en restreignant l'accès aux utilisateurs de type `Admin` (`BibliothequeProxy`).
-* **Observer :**Ce pattern est appliqué pour mettre en place un système de notification. La classe NotificationSystem agit comme le "Sujet", et les classes qui implémentent l'interface `Observateur` (notamment la classe Lecteur) agissent comme des "Observateurs". Lorsqu'un nouvel événement pertinent se produit (comme l'ajout d'un nouveau livre), le Sujet notifie automatiquement tous ses Observateurs abonnés, qui peuvent alors réagir en conséquence (par exemple, afficher un message pour le lecteur).
+* **Observer :** Ce pattern est appliqué pour mettre en place un système de notification. La classe NotificationSystem agit comme le "Sujet", et les classes qui implémentent l'interface `Observateur` (notamment la classe Lecteur) agissent comme des "Observateurs". Lorsqu'un nouvel événement pertinent se produit (comme l'ajout d'un nouveau livre), le Sujet notifie automatiquement tous ses Observateurs abonnés, qui peuvent alors réagir en conséquence (par exemple, afficher un message pour le lecteur).
 
 ## Architecture et Structure du Code
 
