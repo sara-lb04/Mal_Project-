@@ -15,6 +15,7 @@ L'objectif est de concevoir et d'implémenter un système permettant de gérer l
 * **Gestion des Utilisateurs :**
     * Inscription de nouveaux utilisateurs (Admin ou Lecteur) .
     * Connexion d'utilisateurs existants.
+    * emprunt de livres.
 * **Gestion des Emprunts :**
     * Emprunter des livres .
     * Afficher la liste des emprunts .
