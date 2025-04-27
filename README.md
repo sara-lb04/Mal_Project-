@@ -30,7 +30,7 @@ Ce projet met en œuvre les design patterns suivants :
 * **Singleton :** Assure une instance unique de la classe `Bibliotheque` (`Bibliotheque.getInstance()`).
 * **Factory Method :** Utilisé pour la création des différents types d'utilisateurs (`Admin`, `Lecteur`) via la hiérarchie `UtilisateurCreator`, `AdminCreator`, `LecteurCreator`.
 * **Proxy :** Contrôle l'accès aux opérations sensibles de la `Bibliotheque` (ajout et suppression de livres), en restreignant l'accès aux utilisateurs de type `Admin` (`BibliothequeProxy`).
-* **Observer :** Permet aux Lecteurs de s'abonner aux notifications et d'être informés automatiquement de l'ajout de nouveaux livres (`Observateur`, `NotificationSystem`, `Lecteur`).
+* **Observer :**Ce pattern est appliqué pour mettre en place un système de notification. La classe NotificationSystem agit comme le "Sujet", et les classes qui implémentent l'interface `Observateur` (notamment la classe Lecteur) agissent comme des "Observateurs". Lorsqu'un nouvel événement pertinent se produit (comme l'ajout d'un nouveau livre), le Sujet notifie automatiquement tous ses Observateurs abonnés, qui peuvent alors réagir en conséquence (par exemple, afficher un message pour le lecteur).
 
 ## Architecture et Structure du Code
 
@@ -50,7 +50,17 @@ Les données sont stockées en mémoire en utilisant des `ArrayList`.
 
 ## Modélisation
 
-La modélisation du système est représentée par un diagramme de classes UML. Vous pouvez trouver ce diagramme dans le rapport du projet 
+La structure du système est modélisée à l'aide d'un diagramme de classes UML. Ce diagramme représente les différentes classes, leurs attributs, leurs méthodes et les relations qui les unissent (héritage, implémentation, association, dépendance).
+
+Les principales classes modélisées sont :
+* **Bibliotheque:** Représente l'instance unique de la bibliothèque gérant l'ensemble du système.
+* **Livre:** Représente les ouvrages disponibles.
+* **Utilisateur**,**Admin**,**Lecteur :** Modélisent la hiérarchie des utilisateurs du système.
+* **Emprunt:** Enregistre l'association entre un lecteur et un livre emprunté.
+* **UtilisateurCreator**,**AdminCreator**,**AdminCreator** : Gèrent la création des différents types d'utilisateurs via le pattern Factory Method.
+* **Observateur**,**NotificationSystem** :Composants du pattern Observer pour la gestion des notifications.
+* **BibliothequeProxy :** Contrôle l'accès à certaines fonctionnalités de la bibliothèque via le pattern Proxy.
+* **BibliothequeGUI :** Fournit l'interface graphique à l'utilisateur.
 
 ## Auteurs
 
