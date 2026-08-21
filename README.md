@@ -65,7 +65,7 @@ Les principales classes modélisées sont :
 
 ## Auteurs
 
-* Laoubi Sara Sabrine (Spécialité/Groupe : ISIL - Groupe 02)
+* LAOUBI Sara Sabrine (Spécialité/Groupe : ISIL - Groupe 02)
 
 ## Contexte du Projet
 
